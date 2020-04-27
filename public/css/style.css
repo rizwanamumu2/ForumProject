@@ -21,7 +21,7 @@ html {
   /* max-width: 700px; */
   height: 500px;
   /*margin-bottom: 50px;*/
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   background:transparent url(home.JPG);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1318,7 +1318,7 @@ border-top: 3px solid #be161e;
 z-index: 5;
 }
 
-<<<<<<< HEAD
+
 .widget:before, .widget:after {
   content: " ";
   display: table;
@@ -1888,7 +1888,7 @@ section#carouselExampleIndicators {
 }
 
 
-.carousel-indicators li{
+/* .carousel-indicators li{
   width: 13px;
   height: 13px;
   border: 2px solid #9D9D9D;
@@ -1897,24 +1897,30 @@ section#carouselExampleIndicators {
   margin:3px;
   display: block;
 
+} */
+/* .carousel-indicators .active {
+  background-color: #be161e;
+} */
+
+.carousel-indicators li{
+  background-color: #000000;
 }
 
-.carousel-indicators.active{
-  width: 13px;
-  height: 13px;
-  border: none;
-  background: #be161e;
-  border-radius: 50px;
-  margin:3px;
-  transition:all ease-out .35s
+
+.carousel-indicators:hover{
+  cursor: pointer;
+}
+
+
+
+
+.carousel-indicators .active{
+  
+  background-color: #be161e;
   
 } 
 
-.dot:hover{
-  background: #be161e;
-  cursor: pointer;
-  border: none;
-}
+
 /* .dot.active{
   content:'';
   width:3px;
@@ -1929,7 +1935,7 @@ section#carouselExampleIndicators {
   transition:all ease-out .35s
 } */
 
-.carousel-indicators {
+/* .carousel-indicators {
 	
 	position: absolute;
 	z-index: 15;
@@ -1940,7 +1946,7 @@ section#carouselExampleIndicators {
   right: 5%;
   left:95%;
   display: block;
-}
+} */
 .review{
   
   width: 90px;
@@ -1959,7 +1965,13 @@ section#carouselExampleIndicators {
 }
 
 .carousel-item p {
-  padding-right: 90px;
+  margin: 0;
+  text-align: justify;
+}
+
+.item-subsection-title.devider-left {
+  position: absolute;
+  top: 70%;
 }
 
 /* .about-name{
@@ -1986,9 +1998,9 @@ section#carouselExampleIndicators {
     visibility: visible;
   } */
 
-  .review-ol{
+  /* .review-ol{
     margin-bottom: 200px;
-  }
+  } */
 
   .about-name {
     margin-left: 46%;
@@ -1999,11 +2011,141 @@ section#carouselExampleIndicators {
 
 .container {
   position: relative;
-=======
+}
+
+.review-img{
+  vertical-align: middle;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: white;
+  width: auto;
+  height: 235px;
+}
+
+.r-img {
+  width: 40%;
+  height: auto;
+  position: relative;
+  float: left;
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 60%;
+  height: 235px;
+  float: left;
+}
+/* .item-preview {
+  min-width: 216px;
+  max-width: 216px;
+  height: 216px;
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  align-self: center;
+} */
 
 /*--------Edit Layout----------*/
 
-#edit{
+ #edit {
   width: 50%;
->>>>>>> 7ce04a357879d12207460ad9acf6a6cdb425ebbb
+
+}
+
+
+
+
+/*----------------review----------------*/
+
+.popup{
+  border: 0px none;
+    padding: 0px;
+    max-width: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------chat-------------*/
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
 }

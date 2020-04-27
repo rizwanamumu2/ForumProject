@@ -1,4 +1,4 @@
-@extends('layouts.master')
+
 
 @section('js')
     <script>
@@ -18,7 +18,6 @@
     </script>
 @endsection
 
-@section('content')
 
 
 <div class="container" style="margin-bottom:150px">
@@ -43,4 +42,3 @@
 
 {{-- comment --}}
 
-@endsection

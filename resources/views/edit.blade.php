@@ -1,7 +1,6 @@
 @extends('layouts.master')
 
 @section('content')
-<<<<<<< HEAD
 <div class="dark">
 <div class="login_container ">
     <div class="login_container_left">
@@ -282,6 +281,5 @@
             </div>
         </div>
     </div>
->>>>>>> 7ce04a357879d12207460ad9acf6a6cdb425ebbb
 </div>
 @endsection

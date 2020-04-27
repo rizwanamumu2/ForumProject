@@ -97,4 +97,27 @@ jQuery(document).ready(function() {
 if (!browserSupportsCSSProperty('animation')) {
   // fallback…
 }
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+  $(".popup").hide();
+  $(".background").hide();
+  $(".review-a").click(function (e) {
+    e.preventDefault();
+    $("iframe").attr("src", $(this).attr('href'));
+    $(".background").fadeIn('slow');
+    $(".popup").fadeIn('slow');
+  });
+  $(".close").click(function () {
+    $(this).parent().fadeOut("slow");
+    $(".review-a").fadeIn("slow");
+    $(".background").fadeOut('slow');
+  });
+});
 });

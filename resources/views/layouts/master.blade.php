@@ -44,127 +44,29 @@
          <i class="fa  fa-angle-up"> </i> 
     </a>
 
-    <div class="vd_chat-menu hidden-xs">
-        <div class="vd_mega-menu-wrapper">
-            <div class="vd_mega-menu">
-                <ul class="mega-ul">
-                   <li class="profile mega-li pdlr-15 bordered"> 
-                        <a class="mega-link" href="#"  data-action="click-trigger"> 
-                            <span class="menu-name" style="padding-right:10px margin-left=15px; margin-right:15px; color:white; font-size:13px">
-                                <i class="fa fa-comments append-icon"></i> Chat
-                            </span>
-                        </a> 
-                    </li> 
+    <button class="open-button" onclick="openForm()">Chat</button>
 
-                    <li class="profile mega-li pdlr-15 bordered"> 
-                        <a class="mega-link" id="chat_list" href="#"  data-action="click-trigger" > 
-                            <span class="menu-name" style="padding-right:5px; margin-left=5px; margin-right:5px; color:white; font-size:13px">
-                                 Chat List
-                            </span>
-                        </a> 
-                        <div class="vd_mega-menu-content  width-xs-3  center-xs-3 open-top" data-action="click-target" id="chatlist">
-                            <div class="child-menu"> 
-                            	<div class="content-list  content-image">
-                                    <div data-rel="scroll">
-                                        <ul class="list-wrapper pd-lr-10">
-                                            <li>  
-                                                <a href="#"> 
-                                                    <div class="menu-icon"><img src="img/avatar/avatar.jpg" alt="example image"></div> 
-                                                    <div class="menu-text">Jessylin
-	                                                    <div class="menu-info">
-                                                    	    <span class="menu-date">Administrator </span>                                                         
-                                                	    </div>
-                                                    </div>
-                                                    <div class="menu-badge"><span class="badge status vd_bg-green">&nbsp;</span></div> 
-                                                </a>
-                                            </li>
-                                            <li>  
-                                                <a href="#"> 
-                                                    <div class="menu-icon"><img src="img/avatar/avatar-2.jpg" alt="example image"></div> 
-                                                    <div class="menu-text">Rodney Mc.Cardo
-	                                                    <div class="menu-info">
-                                                        	<span class="menu-date">Designer </span>                                                         
-                                                    	</div>
-                                                    </div>
-                                                    <div class="menu-badge"><span class="badge status vd_bg-grey">&nbsp;</span></div> 
-                                                </a>
-                                         </li>
-                                         <li>  
-                                             <a href="#"> 
-                                                <div class="menu-icon"><img src="img/avatar/avatar-3.jpg" alt="example image"></div> 
-                                                <div class="menu-text">Theresia Minoque
-	                                                <div class="menu-info">
-                                                    	<span class="menu-date">Engineering </span>                                                         
-                                                    </div>
-                                                </div>
-                                                <div class="menu-badge"><span class="badge status vd_bg-green">&nbsp;</span></div> 
-                                             </a>
-                                         </li>
-                                         <li>  
-                                             <a href="#"> 
-                                                     <div class="menu-icon"><img src="img/avatar/avatar-4.jpg" alt="example image"></div> 
-                                                     <div class="menu-text">Greg Grog
-	                                                     <div class="menu-info">
-                                                         	<span class="menu-date">Developer </span>                                                         
-                                                 		</div>
-                                                     </div>
-                                                     <div class="menu-badge"><span class="badge status vd_bg-grey">&nbsp;</span></div> 
-                                             </a>
-                                         </li> 
-                                         <li>  
-                                             <a href="#"> 
-                                                     <div class="menu-icon"><img src="img/avatar/avatar-5.jpg" alt="example image"></div> 
-                                                     <div class="menu-text">Stefanie Imburgh
-	                                                     <div class="menu-info">
-                                                         	<span class="menu-date">Dancer</span>                                                         
-                                                 		</div>
-                                                     </div>
-                                                     <div class="menu-badge"><span class="badge status vd_bg-green">&nbsp;</span></div> 
-                                             </a>
-                                         </li> 
-                                         <li>  
-                                             <a href="#"> 
-                                                     <div class="menu-icon"><img src="img/avatar/avatar-6.jpg" alt="example image"></div> 
-                                                     <div class="menu-text">Matt Demon
-	                                                     <div class="menu-info">
-                                                         	<span class="menu-date">Musician </span>                                                         
-                                                 		</div>
-                                                     </div>
-                                                     <div class="menu-badge"><span class="badge status vd_bg-green">&nbsp;</span></div> 
-                                             </a>
-                                         </li>
-                                         <li>  
-                                             <a href="#"> 
-                                                     <div class="menu-icon"><img src="img/avatar/avatar-7.jpg" alt="example image"></div> 
-                                                     <div class="menu-text">Jeniffer Anastasia
-	                                                     <div class="menu-info">
-                                                         	<span class="menu-date">Senior Developer </span>                                                         
-                                                 		</div>
-                                                     </div>
-                                                     <div class="menu-badge"><span class="badge status vd_bg-green">&nbsp;</span></div> 
-                                             </a>
-                                         </li>                    
-                                         <li>  
-                                             <a href="#"> 
-                                                     <div class="menu-icon"><img src="img/avatar/avatar-8.jpg" alt="example image"></div> 
-                                                     <div class="menu-text">Daniel Dreamon
-	                                                     <div class="menu-info">
-                                                         	<span class="menu-date">Sales Executive </span>                                                         
-                                                 		</div>
-                                                     </div>
-                                                     <div class="menu-badge"><span class="badge status vd_bg-green">&nbsp;</span></div> 
-                                             </a>
-                                         </li>                                                                                                                  
-                                     </ul>
-                                     </div>
-                                 </div> 
-                             </div> 
-                           </div>     
-                    </li> 
-                </ul> 
-            </div> 
-        </div>
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Chat</h1>
+    
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
     </div>
+    
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
   
 
     <script src="/js/jquery.min.js"></script>
